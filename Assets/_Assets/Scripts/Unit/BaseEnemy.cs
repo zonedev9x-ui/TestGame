@@ -9,6 +9,7 @@ public class BaseEnemy : BaseCharacter
 
     protected float startDistanceToEnd;
     protected Vector3 baseScale = Vector3.one;
+    protected float baseNavMeshRadius;
 
     [SerializeField] protected float minScale = 1f;
     [SerializeField] protected float maxScale = 2.5f;
@@ -19,8 +20,9 @@ public class BaseEnemy : BaseCharacter
 
         if (navMesh != null)
         {
-            navMesh.obstacleAvoidanceType = ObstacleAvoidanceType.NoObstacleAvoidance;
+            navMesh.obstacleAvoidanceType = ObstacleAvoidanceType.MedQualityObstacleAvoidance;
             navMesh.avoidancePriority = 50;
+            baseNavMeshRadius = navMesh.radius;
         }
     }
 
