@@ -1,0 +1,13 @@
+/UserSettings/
+/Library/
+/Temp/
+/obj/
+/.vs/
+*.Editor.csproj
+*.csproj
+*.sln
+/Logs/
+/remote_config_data
+/Assets/Firebase/Plugins/x86_64/
+/.vscode/
+*.cache
